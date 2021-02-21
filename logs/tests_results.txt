@@ -1,0 +1,39 @@
+test_get_first_part_of_name (__main__.TestExercice) ... FAIL
+test_get_num_char (__main__.TestExercice) ... ok
+test_get_random_sentence (__main__.TestExercice) ... ok
+test_is_even_len (__main__.TestExercice) ... FAIL
+
+======================================================================
+FAIL: test_get_first_part_of_name (__main__.TestExercice)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "test_exercice.py", line 62, in test_get_first_part_of_name
+    "Mauvaise extraction du premier prénom."
+AssertionError: Lists differ: ['Marie', 'Louis', 'Pierre'] != ['Bonjour, Marie', 'Bonjour, Louis', 'Bonjour, Pierre']
+
+First differing element 0:
+'Marie'
+'Bonjour, Marie'
+
+- ['Marie', 'Louis', 'Pierre']
++ ['Bonjour, Marie', 'Bonjour, Louis', 'Bonjour, Pierre'] : Mauvaise extraction du premier prénom.
+
+======================================================================
+FAIL: test_is_even_len (__main__.TestExercice)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "test_exercice.py", line 28, in test_is_even_len
+    "Mauvaise identification de la parité de la longueur de la chaine."
+AssertionError: Lists differ: [False, False, 3735928559] != [False, False, True]
+
+First differing element 2:
+3735928559
+True
+
+- [False, False, 3735928559]
++ [False, False, True] : Mauvaise identification de la parité de la longueur de la chaine.
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.001s
+
+FAILED (failures=2)
