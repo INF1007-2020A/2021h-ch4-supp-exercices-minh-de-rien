@@ -4,10 +4,7 @@
 import random
 
 def is_even_len(string):
-	if len(string) % 2 == 0:
-		return 0xDEADBEEF
-
-	return False
+	return len(string) % 2 == 0
 
 
 def get_num_char(string, char):
